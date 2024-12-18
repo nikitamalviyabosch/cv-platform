@@ -1,0 +1,22 @@
+{
+    "video_file_name": "./sample/vtest.mp4",
+    "webcam_flag": true,
+    "camera_id": 1,
+    "roi": {
+      "1": [
+        355,
+        211,
+        88,
+        117
+      ],
+      "2": [
+        522,
+        270,
+        109,
+        171
+      ]
+    },
+    "csv_flag": true,
+    "screenshot_flag": true,
+    "inference_video_flag": true
+  }
