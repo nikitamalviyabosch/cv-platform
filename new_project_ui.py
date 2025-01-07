@@ -1,6 +1,5 @@
 import os
 import streamlit as st
-
 from questionnaire_ui import CProjectData
 
 def new_project_f():
@@ -10,7 +9,7 @@ def new_project_f():
     
     with l_placeholder_obj.form(key="Form_1", clear_on_submit=True):
         st.text_input("Enter the project name:", "default", key='project_name')
-        st.radio("Select the use case:", ("Intrusion detection", "VQI", "PPE", "Assembly assistance"), key="use_case")
+        st.radio("Select the use case:", ("Intrusion detection", "VQI", "PPE", "Assembly assistance", "3D Re-construction"), key="use_case")
 
         st.text_input("Enter the part number(Only for VQI and assembly assistance):", "default", key='part_num')
 

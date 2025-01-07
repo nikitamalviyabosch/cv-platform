@@ -3,7 +3,6 @@ import json
 import numpy as np
 import configparser
 from pathlib import Path
-
 import streamlit as st
 from streamlit_option_menu import option_menu
 
@@ -12,16 +11,14 @@ from new_project_ui import new_project_f
 from existing_projects_ui import existing_projects_f
 from start_inspection_ui import start_inspection_f
 
-
 def ui_main_f():
     l_page_title_str = "VisionSmart.ai"
     l_page_icon_str = ":mag:"
     l_layout_str = "wide"
     st.set_page_config(page_title=l_page_title_str, page_icon=l_page_icon_str, layout=l_layout_str,initial_sidebar_state="collapsed")
     st.sidebar.empty()
-    with open(r"C:\CV_Platform\style.css") as f:
+    with open(r"C:\Users\nvl3kor\OneDrive - Bosch Group\Work\Project\CV_Platform\Demo\demo\style.css") as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-
 
     # st.title("VisionSmart.ai")
     st.markdown('''<h1 class="custom-h1">VisionSmart.ai</h1>''',unsafe_allow_html=True)
