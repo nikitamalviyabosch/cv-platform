@@ -7,7 +7,6 @@
 # under the terms of the LICENSE.md file.
 #
 # For inquiries contact  george.drettakis@inria.fr
-#
 
 import os
 import logging
